@@ -1,0 +1,83 @@
+
+button {
+  font-family: "Anonymous Pro", monospace;
+  height: 6rem;
+  width: 6rem;
+  display: block;
+  float: left;
+  font-size: 2.5rem;
+  background: #F25675;
+  box-sizing: border-box;
+  color: black;
+  margin: 1vh;
+  }
+
+#answer {
+  font-family: "Anonymous Pro", monospace;
+  color: white;
+  font-size: 4rem;
+  height: 2.4rem;
+  clear: right;
+  margin: .4rem .2rem 0 .16rem;
+  text-align: center;
+  padding-right: .25rem;
+  position: relative;
+  width: 66%;
+  float: left;
+}
+
+#answer::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  content: '';
+  color: white;
+}
+
+.calculator {
+  background-color: black;
+  width: calc(60vh);
+  margin: 60px auto;
+  position: relative;
+  box-sizing: content-box;
+  padding-bottom: .5rem;
+}
+.calculator::after,
+.buttons::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+button.clear {
+  margin-top: 1rem;
+}
+
+.numbers {
+  width: 43.5vh;
+  float: left;
+  padding-left: .4rem;
+}
+
+.operators {
+  width: 5rem;
+  float: left;
+  padding-right: .4rem;
+}
+
+.operators button {
+  color: #272F1B;
+  background: #DADADA;
+
+}
+
+
+button.equals {
+  position: absolute;
+  bottom: .4rem;
+  right: 8.4rem;
+  background: #1665AF;
+  border-color: #1665AF;
+}
