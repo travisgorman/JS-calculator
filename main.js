@@ -73,17 +73,18 @@ clKey.addEventListener( 'click', function() {
 eqKey.addEventListener( 'click', function() {
   var answer;
   if (operator === '+') {
-    answer = Number( firstNumber ) + Number(display.innerHTML);
+    answer = Number( firstNumber ) 
+      + Number(display.innerHTML);
+
   } else if ( operator === '-' ) {
-    answer = Number( firstNumber ) - Number(display.innerHTML);
+    answer = Number( firstNumber ) 
+      - Number(display.innerHTML);
+
   } else if ( operator === 'x' ) {
-    answer = Number( firstNumber ) * Number(display.innerHTML);
+    answer = Number( firstNumber ) 
+      * Number(display.innerHTML);
+
   } else {
     answer = Number( firstNumber) / Number(display.innerHTML);
-  }
-  if (answer > 9999999) {
-    display.innerHTML = 'too big';
-  } else {
-    display.innerHTML = String(answer).slice(0, 7);
   }
 });
